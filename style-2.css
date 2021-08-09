@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;1,100&display=swap');
+
+
+/*Root Font Size*/
+html{
+    font-size: 18px;
+}
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; ;
+}
+
+.container{
+    min-width: 100vw;
+    height: 100vh;
+    
+    background-size: auto 50%;
+    background-image: linear-gradient(45deg, #FF5149, #FF5149);
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+/************header**********/
+header{
+    text-align: center;
+    width: 100%;
+    margin-bottom: 3rem;
+    font-size: 1rem;
+
+}
+header .logo{
+    margin-top: 2rem;
+    width:11rem;
+}
+.sub-heading{
+    color: white;
+    text-transform: uppercase;
+}
+
+/******main-image********/
+.image{
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-image{
+    height: 50vh;
+
+}
+
+/************FOOTER************/
+footer{
+    width: 100vw;
+    text-align: center;
+    display:flex;
+    justify-content:center;
+    align-items: flex-end;
+    
+}
+
+.policy{
+    font-size: 0.75rem;
+    color: black;
+    font-weight: 500;
+}
+
+.disclaimer{
+    font-size: 0.625rem;
+    color: grey;
+    margin-bottom: 2rem;
+}
+
+/*********Media Queries*******/
+
+/*Mobile size screen*/
+
+@media screen and (max-width:500px){
+
+    html{
+        font-size: 13px;
+    }
+
+    .main-image{
+        width:80%;
+    }
+    .sub-heading{
+        margin-top: 0.3rem;
+    }
+    footer{
+        margin-top: 2rem;
+    }
+    
+    .disclaimer{
+        padding: 0 2rem;
+    }
+
+}
+
+/*Tablet size screen*/
+
+
+@media only screen and (max-width: 768px) and (min-width: 500px){
+    html{
+        font-size: 16px;
+    }
+    .main-image{
+        width: 23rem;
+        height: 19rem;
+
+    }
+    .sub-heading{
+        margin-top: 0.5rem;
+    }
+    footer{
+        margin-top: 2rem;
+    }
+}
